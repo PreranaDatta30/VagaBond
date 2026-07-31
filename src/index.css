@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Outfit:wght@400;600;700&display=swap');
+
+/* Vintage Vagabond Theme Variables */
+:root {
+  --bg-navy: #101c2e;
+  --card-navy: #172439;
+  --theme-yellow: #f4be54;
+  --theme-terracotta: #d85738;
+  --theme-border: #0a111a;
+  --text-gold: #f4be54;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-navy);
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+}
+
+/* Vintage Font Style */
+h1, h2, h3, h4, .vintage-font {
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Vintage Book Container Card */
+.vintage-card {
+  background-color: var(--theme-yellow);
+  border: 3px solid var(--theme-border);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.4);
+  color: var(--theme-border);
+  padding: 24px;
+}
+
+/* Vintage Button Styling */
+.vintage-button {
+  background-color: var(--theme-terracotta);
+  color: #ffffff;
+  border: 2px solid var(--theme-border);
+  border-radius: 8px;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  padding: 12px 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.1s ease, background-color 0.2s;
+}
+
+.vintage-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.vintage-button:active {
+  transform: translateY(0);
+}
